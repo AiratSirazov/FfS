@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: auto;
+    height: auto;
+    min-width: 400px;
+    min-height: 350px;
+
+   /* margin-left: 100px;*/
+}
+
+#header {
+    background-color: #42C0D7;
+}
+
+#logo {
+    margin-left: 10%;
+}
+
+
+#exit {
+    float: right;
+    margin-right: 10%;
+    /*border: 2px solid #FED67F;
+    padding: 2px;
+    color: #FED67F;*/
+}
+/*
+::-moz-selection {
+    background: #42C0D7; /* Firefox
+}*/

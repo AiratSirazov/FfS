@@ -1,0 +1,10 @@
+#footer {
+    background-color: #42C0D7;
+}
+
+#content {
+    width: 900px;
+    height: auto;
+    border: 2px solid #42C0D7;
+    margin-left: 17%;
+}
