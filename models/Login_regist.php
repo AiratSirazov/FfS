@@ -23,8 +23,7 @@ class Login_regist extends Model {
      */
     public function saveUserData($email, $password) {
 
-        $email = htmlentities($email);
-        if (!empty($email)) {
+        if (!empty($_POST['email'])) {
             // Проверка существования email в базе данных
 
         } else {
@@ -36,6 +35,16 @@ class Login_regist extends Model {
         $IPAdress = $_SERVER['REMOTE_ADDR'];
         $date = date();*/
 
+    }
+
+    // Проверка на корректность email и на существование
+    public function checkEmail($email) {
+        $this->_db->query($email);
+    }
+
+    // Осуществляет запрос в БД
+    public function query($sql) {
+        return $this->_db->query($sql);
     }
 
 }

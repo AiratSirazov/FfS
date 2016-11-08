@@ -8,7 +8,7 @@
     <input class="form hidden_regist" type="text" name="email_confirm" placeholder="Код потверждения">
     <div class="form confirm" name="confirm">Потвердить</div>
     <!-- Конец потверждения -->
-
+    <?php ?>
     <div id="login_down">
         <span id="forget">Забыли пароль?</span><div id="regist">Регистрация</div>
     </div>

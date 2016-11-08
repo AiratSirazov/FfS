@@ -8,9 +8,9 @@
 
 class Model {
 
+  public $db = null;
   public function __construct() {
-      $db = Config::loadLibrary('Database');
-      $db = new Database();
+      $this->_db = Config::loadLibrary('Database');
   }
 
   public function getUserData() {

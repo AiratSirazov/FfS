@@ -8,6 +8,7 @@
 
 class Database {
 
+    private $pdo = null;
     public function __construct() {
         // Подключаем БД
         $dbData = Config::getDBData();
@@ -18,10 +19,24 @@ class Database {
     public function db_connect($dbData) {
         $dsn = "mysql:host=" . $dbData['db_host'] . ";" . "dbname=" . $dbData['database'];
         try {
-            $pdo = new PDO($dsn, $dbData['db_user'], $dbData['db_password']);
+            $this->_pdo = new PDO($dsn, $dbData['db_user'], $dbData['db_password']);
         } catch (PDOException $e) {
             die('Connection error: ' . $e->getMessage());
         }
         return true;
     }
+
+    public function pr() {
+        echo "pr it is cool";
+    }
+
+    // Запрос в БД и получение данных
+    public function query($query) {
+        $stmt = $this->_pdo->prepare($query);
+        $stmt->execute();
+        $data = $stmt->fetchAll();
+        // Возвращаем результат запроса
+        return $data;
+    }
+
 }
