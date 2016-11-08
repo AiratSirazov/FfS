@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/config.php'?>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
@@ -18,5 +17,6 @@
                 <a href="index.php"><img src="logo.png" id="logo"></a>
                 <div id="exit" hidden>Выйти</div>
             </div>
+            <div id="content">
             <!-- Конец header -->
             <!-- Начало content -->

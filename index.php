@@ -1,8 +1,10 @@
-<?php include_once dirname(__FILE__).'/views/parts/header.php'; ?>
-<div id="content">
-    <!-- Окно предупреждения -->
-    <div id="warning" hidden>Bum</div>
-    <!-- Конец предупреждения -->
-    <?php include_once dirname(__FILE_).'/views/login_regist.php';?>
-</div>
-<?php include_once dirname(__FILE__).'/views/parts/footer.php'; ?>
+<?php
+/**
+ * @copyright Copyright (c) 2016 FfS
+ * @author Airat Sirazov
+ * @link http://ffs.ru
+ * @version v 1.0
+ */
+
+// Пересылается на на контроллер регистрации
+include_once $_SERVER['DOCUMENT_ROOT'].'\controllers\login_regist.php';
